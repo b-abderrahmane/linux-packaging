@@ -24,6 +24,7 @@ helloworld: $(OBJ)
 clean:
 	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~
 
-
+install: helloworld
+	sudo cp helloworld /usr/bin
 
 
